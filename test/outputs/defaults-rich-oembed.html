@@ -1,0 +1,24 @@
+<p>Hey this is a nice youtube video:</p>
+<p><div id="oembed-test-id" class="remark-oembed-inline"><a href="https://www.youtube.com/watch?v=aoLhACqJCUg" rel="noopener noreferrer nofollow" target="_blank"><img src="https://i.ytimg.com/vi/aoLhACqJCUg/hqdefault.jpg" class="remark-oembed-photo" title="Há Música na Cidade 2015"></a></div><template id="oembed-test-id-template"><iframe width="480" height="270" src="https://www.youtube.com/embed/aoLhACqJCUg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></template><script async="true" defer="true">
+    const isDocumentReady = () => {
+      if (document.readyState !== 'complete') {
+        document.addEventListener('readystatechange', isDocumentReady);
+        return false;
+      }
+
+      requestAnimationFrame(() => {
+        
+    const widget = document.getElementById('oembed-test-id-template').content.cloneNode(true);
+    const shadow = document.getElementById('oembed-test-id').attachShadow({ mode: 'closed' });
+    shadow.appendChild(widget);
+  ;
+      });
+
+      return true;
+    };
+
+    if (!isDocumentReady()) {
+      document.addEventListener('readystatechange', isDocumentReady);
+    }
+  </script></p>
+<p>Check it out 👆</p>

@@ -1,0 +1,24 @@
+<p>Hey this is a nice photo:</p>
+<p><div id="oembed-test-id" class="remark-oembed-inline"><a href="https://www.flickr.com/photos/pedrocaetano/27432477888" rel="noopener noreferrer nofollow" target="_blank"><img src="https://live.staticflickr.com/872/27432477888_8236c59e1d_b.jpg" class="remark-oembed-photo" title="Leiria by night"></a></div><template id="oembed-test-id-template"><a data-flickr-embed="true" href="https://www.flickr.com/photos/pedrocaetano/27432477888/" title="Leiria by night by Pedro Nuno Caetano, on Flickr"><img src="https://live.staticflickr.com/872/27432477888_8236c59e1d_b.jpg" width="1024" height="678" alt="Leiria by night"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></template><script async="true" defer="true">
+    const isDocumentReady = () => {
+      if (document.readyState !== 'complete') {
+        document.addEventListener('readystatechange', isDocumentReady);
+        return false;
+      }
+
+      requestAnimationFrame(() => {
+        
+    const widget = document.getElementById('oembed-test-id-template').content.cloneNode(true);
+    const shadow = document.getElementById('oembed-test-id').attachShadow({ mode: 'closed' });
+    shadow.appendChild(widget);
+  ;
+      });
+
+      return true;
+    };
+
+    if (!isDocumentReady()) {
+      document.addEventListener('readystatechange', isDocumentReady);
+    }
+  </script></p>
+<p>Check it out 👆</p>

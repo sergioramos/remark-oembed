@@ -1,0 +1,67 @@
+<p>Hey this is a nice photo:</p>
+<div class="remark-oembed-inline" data-oembed>
+  <a
+    href="https://www.flickr.com/photos/pedrocaetano/27432477888"
+    class="remark-oembed-anchor"
+    data-oembed
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+    ><img
+      src="https://live.staticflickr.com/872/27432477888_8236c59e1d_b.jpg"
+      title="Leiria by night"
+      width="1024"
+      height="678"
+      class="remark-oembed-photo"
+      data-oembed /></a
+  ><template data-oembed-template
+    ><a
+      data-flickr-embed="true"
+      href="https://www.flickr.com/photos/pedrocaetano/27432477888/"
+      title="Leiria by night by Pedro Nuno Caetano, on Flickr"
+      ><img
+        src="https://live.staticflickr.com/872/27432477888_8236c59e1d_b.jpg"
+        width="1024"
+        height="678"
+        alt="Leiria by night"
+    /></a>
+    <script
+      async
+      src="https://embedr.flickr.com/assets/client-code.js"
+      charset="utf-8"
+    ></script
+  ></template>
+</div>
+<p>Check it out 👆</p>
+<script async defer>
+  const isDocumentReady = () => {
+    if (document.readyState !== 'complete') {
+      document.addEventListener('readystatechange', isDocumentReady);
+      return false;
+    }
+
+    requestAnimationFrame(() => {
+      document.querySelectorAll('div[data-oembed]').forEach((el) => {
+        const template = el
+          .querySelector('[data-oembed-template]')
+          .content.cloneNode(true);
+        el.innerHTML = '';
+        el.attachShadow({ mode: 'closed' }).appendChild(template);
+      });
+
+      document.querySelectorAll('img[data-oembed][data-src]').forEach((img) => {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.removeAttribute('data-src');
+      });
+
+      document.querySelectorAll('[data-oembed]').forEach((el) => {
+        el.removeAttribute('data-oembed');
+      });
+    });
+
+    return true;
+  };
+
+  if (!isDocumentReady()) {
+    document.addEventListener('readystatechange', isDocumentReady);
+  }
+</script>

@@ -1,7 +1,7 @@
 {
   "name": "@sergioramos/remark-oembed",
   "description": "Converts URLs surrounded by newlines into embeds that are loaded asynchronously",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "repository": "sergioramos/remark-oembed",
   "main": "index.js",
   "keywords": [

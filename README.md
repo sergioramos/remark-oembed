@@ -304,6 +304,18 @@ remark()
 
 > Take a look at [how it would look](test/outputs/async-img-all.png) before executing the script, and the unchanged [HTML output](test/outputs/async-img-all.html).
 
+### `jsx`
+
+To use with [@mdx-js/mdx](https://mdxjs.com/advanced/api), set `jsx` as true.
+
+```javascript
+const mdx = require('@mdx-js/mdx');
+
+await mdx(src, {
+  remarkPlugins: [[require('@sergioramos/remark-oembed'), { jsx: true }],
+});
+```
+
 ## license
 
 BSD-3-Clause

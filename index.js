@@ -29,7 +29,7 @@ const ATTRS = {
 };
 
 const Script = () => {
-  return `
+  const script = `
     document.querySelectorAll('div[data-oembed]').forEach((el) => {
       const template = el.querySelector('[data-oembed-template]').content.cloneNode(true);
       el.innerHTML = '';
@@ -45,10 +45,8 @@ const Script = () => {
       el.removeAttribute('data-oembed');
     });
   `;
-};
 
-const RequestAnimationFrame = ({ script }) => {
-  const __html = `
+  return `
     const isDocumentReady = () => {
       if (document.readyState !== 'complete') {
         document.addEventListener('readystatechange', isDocumentReady);
@@ -66,8 +64,14 @@ const RequestAnimationFrame = ({ script }) => {
       document.addEventListener('readystatechange', isDocumentReady);
     }
   `;
+};
 
+const RequestAnimationFrame = ({ script: __html }) => {
   return h('script', { async: true, defer: true }, [__html]);
+};
+
+const JsxScript = ({ script: __html }) => {
+  return `<script defer async dangerouslySetInnerHTML={{ __html: \`${__html}\` }} />`;
 };
 
 const Img = ({ id, url, title, width, height, dataSrc }) => {
@@ -96,18 +100,26 @@ const Anchor = (props, children = []) => {
   );
 };
 
-const StaticPhotoOembed = ({ emptyUrl, url, href, ...rest }) => {
+const StaticPhotoOembed = ({ emptyUrl, url, href, jsx = false, ...rest }) => {
   const src = emptyUrl || url;
   const isImage = /^image\//.test(getType(href) || '');
 
   const img = Img({ ...rest, url: src, dataSrc: url });
   const anchor = isImage ? img : Anchor({ href }, [img]);
 
-  if (!emptyUrl) {
+  if (!jsx) {
     return anchor;
   }
 
-  return anchor;
+  const html = toHtml(anchor, {
+    allowDangerousHtml: true,
+  });
+
+  return {
+    type: 'jsx',
+    properties: { dataOembed: true },
+    value: `<wrapper dangerouslySetInnerHTML={{ __html: \`${html}\` }} />`,
+  };
 };
 
 const resolvePreview = ({ isImage, thumbnail, url, emptyUrl }) => {
@@ -123,26 +135,43 @@ const resolvePreview = ({ isImage, thumbnail, url, emptyUrl }) => {
   return '';
 };
 
-const Oembed = ({ type, source, ...rest }) => {
+const Oembed = ({ type, source, jsx = false, ...rest }) => {
   if (type === 'photo' && !source) {
-    return StaticPhotoOembed(rest);
+    return StaticPhotoOembed({ jsx, ...rest });
   }
 
   const imgSrc = resolvePreview(rest);
   const img = imgSrc ? Img({ ...rest, url: imgSrc }) : '';
   const anchor = img ? Anchor({ href: rest.href }, [img]) : img;
 
-  return h(
+  const node = h(
     'div',
     ATTRS.inline,
     [anchor, h('template', ATTRS.template, [source])].filter(Boolean),
   );
+
+  if (!jsx) {
+    return node;
+  }
+
+  const html = toHtml(node, {
+    allowDangerousHtml: true,
+  });
+
+  return {
+    type: 'jsx',
+    properties: { dataOembed: true },
+    value: `<wrapper dangerouslySetInnerHTML={{ __html: \`${html}\` }} />`,
+  };
 };
 
 const transformImage = async (ctx = {}) => {
   const { url, width, height, asyncImg = false } = ctx;
+  if (!url) {
+    return {};
+  }
 
-  const isImage = /^image\//.test(getType(url) || '');
+  const isImage = /^image\//.test(getType(parse(url).pathname) || '');
   if (!isImage) {
     return {};
   }
@@ -157,7 +186,7 @@ const transformImage = async (ctx = {}) => {
 };
 
 const processOembed = async (oembed) => {
-  const { source, url, syncWidget = false } = oembed;
+  const { source, url, syncWidget = false, jsx = false } = oembed;
   const isImage = /^image\//.test(getType(url) || '');
 
   if (!isImage && !source) {
@@ -165,7 +194,19 @@ const processOembed = async (oembed) => {
   }
 
   if (syncWidget && source) {
-    return h('div', ATTRS.inline, [source]);
+    const newNode = h('div', ATTRS.inline, [source]);
+    if (!jsx) {
+      return newNode;
+    }
+
+    const html = toHtml(newNode, {
+      allowDangerousHtml: true,
+    });
+
+    return {
+      type: 'jsx',
+      value: `<wrapper dangerouslySetInnerHTML={{ __html: \`${html}\` }} />`,
+    };
   }
 
   return Oembed({
@@ -229,7 +270,7 @@ const processNode = async (node, { providers = [], ...options }) => {
 
   const { html, ...rest } = await fetchOembed(endpoint);
   const source = html ? { type: 'raw', value: html } : undefined;
-  const oembed = { href: child.url, ...rest, ...options, source };
+  const oembed = { ...rest, ...options, source, href: child.url };
   const newNode = await processOembed(oembed);
   return newNode ? newNode : node;
 };
@@ -242,6 +283,8 @@ const fetchOembedProviders = async () => {
 };
 
 module.exports = (opts = {}) => {
+  const { jsx = false } = opts;
+
   return async (tree) => {
     const providers = await fetchOembedProviders();
 
@@ -294,7 +337,7 @@ module.exports = (opts = {}) => {
     }
 
     const newSerializedTree = await map(newTree, async (node) => {
-      if (!matches('[data-oembed]', node)) {
+      if (!matches('[data-oembed]', node) || jsx) {
         return node;
       }
 
@@ -306,18 +349,21 @@ module.exports = (opts = {}) => {
       };
     });
 
-    if (ctx.syncWidget || !hasOembed) {
+    if (ctx.syncWidget) {
       return newSerializedTree;
     }
 
+    const script = Script();
     const { children = [] } = newSerializedTree;
     return Object.assign(newSerializedTree, {
       children: children.concat([
         {
-          type: 'html',
-          value: toHtml(RequestAnimationFrame({ script: Script() }), {
-            allowDangerousHtml: true,
-          }),
+          type: jsx ? 'jsx' : 'html',
+          value: jsx
+            ? JsxScript({ script })
+            : toHtml(RequestAnimationFrame({ script }), {
+                allowDangerousHtml: true,
+              }),
         },
       ]),
     });

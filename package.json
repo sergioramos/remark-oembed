@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-react": "^7.10.1",
     "@mdx-js/mdx": "^1.6.1",
     "@rollup/plugin-virtual": "^2.0.2",
     "ava": "^3.8.2",

@@ -29,7 +29,7 @@
     "hast-util-select": "^4.0.0",
     "hast-util-to-html": "^7.1.1",
     "hastscript": "^5.1.2",
-    "mime": "^2.4.5"
+    "mime": "^2.4.6"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

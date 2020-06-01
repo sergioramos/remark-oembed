@@ -24,7 +24,7 @@
     "test": "NODE_ENV=test c8 -r lcovonly -r html -r text ava --timeout 9999 --serial"
   },
   "dependencies": {
-    "apr-intercept": "^3.0.3",
+    "apr-intercept": "^3.0.4",
     "got": "^11.1.4",
     "hast-util-select": "^4.0.0",
     "hast-util-to-html": "^7.1.1",

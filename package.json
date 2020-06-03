@@ -40,7 +40,7 @@
     "c8": "^7.1.2",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-config-xo-space": "^0.24.0",
+    "eslint-config-xo-space": "^0.25.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.4",
     "mz": "^2.7.0",

@@ -15,8 +15,8 @@
     "defer"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "restricted"
+    "registry": "https://registry.npmjs.com",
+    "access": "public"
   },
   "scripts": {
     "eslint": "eslint . --ext .js",

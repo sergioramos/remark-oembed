@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/sergioramos/remark-oembed/compare/v1.1.1...v1.1.2) (2020-08-20)
+
+### Chores
+
+- remove scope ([96aa192](https://github.com/sergioramos/remark-oembed/commit/96aa19295ab676d6bb82f8776b703fb06c47f6ab))
+
 ## [1.1.1](https://github.com/sergioramos/remark-oembed/compare/v1.1.0...v1.1.1) (2020-08-18)
 
 ### Chores

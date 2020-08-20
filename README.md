@@ -7,7 +7,7 @@ _For the most part, this code is taken directly from [agentofuser/remark-oembed]
 ## installation
 
 ```bash
-yarn add @sergioramos/remark-oembed
+yarn add remark-oembed
 ```
 
 ## usage
@@ -36,7 +36,7 @@ And our script looks as follows:
 const remark = require('remark');
 
 remark()
-  .use(require('@sergioramos/remark-oembed'))
+  .use(require('remark-oembed'))
   .use(require('remark-html'))
   .process(src, (err, file) => console.log(String(file)));
 ```
@@ -160,7 +160,7 @@ If you don't want to load the widget asynchronously and just default to how it w
 
 ```javascript
 remark()
-  .use(require('@sergioramos/remark-oembed'), { syncWidget: true })
+  .use(require('remark-oembed'), { syncWidget: true })
   .use(require('remark-html'))
   .process(src, (err, file) => console.log(String(file)));
 ```
@@ -188,7 +188,7 @@ Not only with `thumbnails`, but also with `oembed`'s `type === 'photo'`, you can
 
 ```javascript
 remark()
-  .use(require('@sergioramos/remark-oembed'), { asyncImg: true })
+  .use(require('remark-oembed'), { asyncImg: true })
   .use(require('remark-html'))
   .process(src, (err, file) => console.log(String(file)));
 ```
@@ -312,7 +312,7 @@ To use with [@mdx-js/mdx](https://mdxjs.com/advanced/api), set `jsx` as true.
 const mdx = require('@mdx-js/mdx');
 
 await mdx(src, {
-  remarkPlugins: [[require('@sergioramos/remark-oembed'), { jsx: true }],
+  remarkPlugins: [[require('remark-oembed'), { jsx: true }],
 });
 ```
 

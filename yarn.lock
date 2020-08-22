@@ -1544,8 +1544,8 @@ __metadata:
   linkType: hard
 
 "concordance@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "concordance@npm:5.0.0"
+  version: 5.0.1
+  resolution: "concordance@npm:5.0.1"
   dependencies:
     date-time: ^3.1.0
     esutils: ^2.0.3
@@ -1555,7 +1555,7 @@ __metadata:
     md5-hex: ^3.0.1
     semver: ^7.3.2
     well-known-symbols: ^2.0.0
-  checksum: 3/24145ba60819580041967503761147ecc55f08bac77a31c6bcc946a1e6739edaeae505a401ad72902fd69b5849fdad4e168118ce5b66a6bbe473cb7f65d70d82
+  checksum: 3/e74fbad4fee671c90ed49d91e59b607af8a65c5edec41a3072ee33b17b9d6e6d944f9144df40c900b8a8161848716acf1abdc4fb1850c33d0fd8b585ad53da8d
   languageName: node
   linkType: hard
 
@@ -4883,7 +4883,7 @@ fsevents@~2.1.2:
     react-dom: ^16.13.1
     remark: ^12.0.1
     remark-html: ^12.0.0
-    rollup: ^2.26.4
+    rollup: ^2.26.5
     rollup-plugin-babel: ^4.4.0
   languageName: unknown
   linkType: soft
@@ -5148,9 +5148,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.26.4":
-  version: 2.26.4
-  resolution: "rollup@npm:2.26.4"
+"rollup@npm:^2.26.5":
+  version: 2.26.5
+  resolution: "rollup@npm:2.26.5"
   dependencies:
     fsevents: ~2.1.2
   dependenciesMeta:
@@ -5158,7 +5158,7 @@ fsevents@~2.1.2:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 3/8ab966be54b5dbbe9ada833208a24e9f5a7a4c3fca58659f9a4e03c6cd94b4d8f19437ce3ce8af055859e415327de1b8f5cb0d331fa886db2583992e8e2ef6d6
+  checksum: 3/92b0e96cc32af0dc18f42c12aed671085b1ba684d4b3211ac019912c7947830f624c2f1913108975630f8712667f0b9fa2999895f86a68ac4ddffbc2c88ea208
   languageName: node
   linkType: hard
 

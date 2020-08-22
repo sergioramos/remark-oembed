@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/sergioramos/remark-oembed/compare/v1.1.2...v1.1.3) (2020-08-22)
+
+### Chores
+
+- upgrade dependencies ([0705531](https://github.com/sergioramos/remark-oembed/commit/0705531db994ed2c9ff60a68f41a7a2c5e9ec94c))
+- upgrade rollup ([411a0dc](https://github.com/sergioramos/remark-oembed/commit/411a0dc8e2b9b3326f3fe156db8dac205355d292))
+
 ## [1.1.2](https://github.com/sergioramos/remark-oembed/compare/v1.1.1...v1.1.2) (2020-08-20)
 
 ### Chores

@@ -37,15 +37,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.1":
-  version: 7.11.1
-  resolution: "@babel/core@npm:7.11.1"
+"@babel/core@npm:^7.11.4":
+  version: 7.11.4
+  resolution: "@babel/core@npm:7.11.4"
   dependencies:
     "@babel/code-frame": ^7.10.4
-    "@babel/generator": ^7.11.0
+    "@babel/generator": ^7.11.4
     "@babel/helper-module-transforms": ^7.11.0
     "@babel/helpers": ^7.10.4
-    "@babel/parser": ^7.11.1
+    "@babel/parser": ^7.11.4
     "@babel/template": ^7.10.4
     "@babel/traverse": ^7.11.0
     "@babel/types": ^7.11.0
@@ -57,18 +57,18 @@ __metadata:
     resolve: ^1.3.2
     semver: ^5.4.1
     source-map: ^0.5.0
-  checksum: 3/c6bb33b1f7eb803de5832342841ed615f0152e333efa601bf18460c8070bfd0e77cea83010a18a409bf8886096ec57397dd8bf388bc4d85f1337dc2bc6e3f7ef
+  checksum: 3/21b40a4242f308c2ccbcc07393bc47ef1ed3f6b4f6db5081801cf4c504926e28e24130bf4afd81ff9b0d6c61cdbb873492c892d0cebdb2e5f5cfb9711b17f089
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.10.5, @babel/generator@npm:^7.11.0":
-  version: 7.11.0
-  resolution: "@babel/generator@npm:7.11.0"
+"@babel/generator@npm:^7.10.5, @babel/generator@npm:^7.11.0, @babel/generator@npm:^7.11.4":
+  version: 7.11.4
+  resolution: "@babel/generator@npm:7.11.4"
   dependencies:
     "@babel/types": ^7.11.0
     jsesc: ^2.5.1
     source-map: ^0.5.0
-  checksum: 3/aec10e0792f506b88b0abf859d7a76d7d4a8e9a4c3865f13ce9c2fc6d67234e205859c20f8aef633f2b6a23acc7b8af1d70d77ad186b3d0af155ab9252e13b10
+  checksum: 3/1244facf6e03ea120ee6f7520eb7e7347ef97a3ece7ccf5d3efd5a70e6c4f85c67d7e8b9dc533ee071c95d91fe0ff8c1b9cf1a59447f4bc1caddcace64e77dfb
   languageName: node
   linkType: hard
 
@@ -231,12 +231,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.10.4, @babel/parser@npm:^7.10.5, @babel/parser@npm:^7.11.0, @babel/parser@npm:^7.11.1":
-  version: 7.11.3
-  resolution: "@babel/parser@npm:7.11.3"
+"@babel/parser@npm:^7.10.4, @babel/parser@npm:^7.10.5, @babel/parser@npm:^7.11.0, @babel/parser@npm:^7.11.4":
+  version: 7.11.4
+  resolution: "@babel/parser@npm:7.11.4"
   bin:
     parser: ./bin/babel-parser.js
-  checksum: 3/39795285226f17c09492bbbfd3bfdde461bc3d0b935000e5fc66c3376567585959d0488d4e1447ebcb1528abe6fc9c1a1740b05cdb8078acee1242141169397e
+  checksum: 3/06337dd30f432634503542a489bc4106a7505e7551c2feae0f1d25f35dfed9d1192373b3366ffd3a9a3ee65aeec60bb9c7d0612f9e0cfc17835eae467701b42a
   languageName: node
   linkType: hard
 
@@ -518,9 +518,9 @@ __metadata:
   linkType: hard
 
 "@sindresorhus/is@npm:^3.0.0":
-  version: 3.1.1
-  resolution: "@sindresorhus/is@npm:3.1.1"
-  checksum: 3/423f0a43708b121fbc8df410c3c17b06292f3ffcb12d5ab26f38a637c50107fee9ec1459f4b121f1ac38ffb136b10a281e79b6b74142a1dfe5088d92fb564a3c
+  version: 3.1.2
+  resolution: "@sindresorhus/is@npm:3.1.2"
+  checksum: 3/da0047761ed8f7803955bedefe75324f3601b950b98c38f6e5e409ed3ce4c07035ed2733cce9b48377d9fc8cfbaa5b2aa8bac0505188a7c5b65a06c47057a610
   languageName: node
   linkType: hard
 
@@ -719,12 +719,12 @@ __metadata:
   linkType: hard
 
 "aggregate-error@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "aggregate-error@npm:3.0.1"
+  version: 3.1.0
+  resolution: "aggregate-error@npm:3.1.0"
   dependencies:
     clean-stack: ^2.0.0
     indent-string: ^4.0.0
-  checksum: 3/aee96f00c21c9a8c005d949a448e656339235faeec5c050e041ed3d33812fc3478a777ffd6309eb61c17ceb66dd0d2c6220e06e565ec994f536d9a16814e0ebf
+  checksum: 3/704d2001a303c185e9b836d211f7eef2f4557195a11c3271143b4dcda5f6f263abe746d9b8a06b5871d07870686c7db9c0b2c38e2d3cbc593784eaaee8a29043
   languageName: node
   linkType: hard
 
@@ -2739,9 +2739,9 @@ fsevents@~2.1.2:
   linkType: hard
 
 "hast-util-is-element@npm:^1.0.0":
-  version: 1.0.4
-  resolution: "hast-util-is-element@npm:1.0.4"
-  checksum: 3/19562753addf477f710980c525e302ccaaac957c4e34c7c8e317607136a58db1244df12cdaae064a625c71e3948d5dccced93ab774923e6ae1a82d938d9855e5
+  version: 1.1.0
+  resolution: "hast-util-is-element@npm:1.1.0"
+  checksum: 3/fb8241c9a0ef166f4fc812f30148573e80db44f0c99dedbcff69016800edcb7c9383abf0789d8cd1389c0ec8a75efd078bbdb75254db9aec6cb5d599c7672244
   languageName: node
   linkType: hard
 
@@ -4858,7 +4858,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "remark-oembed@workspace:."
   dependencies:
-    "@babel/core": ^7.11.1
+    "@babel/core": ^7.11.4
     "@babel/preset-react": ^7.10.4
     "@mdx-js/mdx": ^1.6.16
     "@rollup/plugin-virtual": ^2.0.3
@@ -5963,7 +5963,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"unified@npm:9.1.0, unified@npm:^9.0.0":
+"unified@npm:9.1.0":
   version: 9.1.0
   resolution: "unified@npm:9.1.0"
   dependencies:
@@ -5974,6 +5974,20 @@ fsevents@~2.1.2:
     trough: ^1.0.0
     vfile: ^4.0.0
   checksum: 3/746aa0d0f4179ca55c15ce027227fadc22bf7d3cb5ff5c9a5c22fb27857a92c2a26c17bb6c26ccd44b7f35c91c0663ff3bd165f42e577a08b25a7f87c524883f
+  languageName: node
+  linkType: hard
+
+"unified@npm:^9.0.0":
+  version: 9.2.0
+  resolution: "unified@npm:9.2.0"
+  dependencies:
+    bail: ^1.0.0
+    extend: ^3.0.0
+    is-buffer: ^2.0.0
+    is-plain-obj: ^2.0.0
+    trough: ^1.0.0
+    vfile: ^4.0.0
+  checksum: 3/07fd97c046b51c49a08d3f3f7b7f10ddc379dc67ca9270fe109b0543c27bf78b15f41b4d89ea1d800ab767906757bbb910af97b8ec39e87429d5ab46ddb56f4b
   languageName: node
   linkType: hard
 
@@ -6157,9 +6171,9 @@ fsevents@~2.1.2:
   linkType: hard
 
 "vfile-location@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "vfile-location@npm:3.0.1"
-  checksum: 3/2a9165f1c69a99f6ac4e05c66fc547fb2ab3c56a79f6bb02592bda756f423b905f104e66591bd08b2c5c957dc55d7a94335fa95d337385ba99aad160136ff904
+  version: 3.1.0
+  resolution: "vfile-location@npm:3.1.0"
+  checksum: 3/85194b1116dcc7fb4fecbc4c33675da4ff71c2b2cbed3ed5b8b24bd1bcda6b56d22f200d3cced9543ef78fc16d753cf7f69589121ce074fd1ff6aec95e94cd50
   languageName: node
   linkType: hard
 

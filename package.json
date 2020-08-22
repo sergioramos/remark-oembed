@@ -32,7 +32,7 @@
     "mime": "^2.4.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "@babel/preset-react": "^7.10.4",
     "@mdx-js/mdx": "^1.6.16",
     "@rollup/plugin-virtual": "^2.0.3",

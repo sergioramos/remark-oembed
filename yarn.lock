@@ -695,19 +695,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-walk@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "acorn-walk@npm:7.2.0"
-  checksum: 3/7b52d5d6397f2d395ca878bdb0f56e583e69bc875521876d05fe2b6e293c21aca918b288c01bd18ac99b46b55a0f00a8d0e30fbdfb53c8e36e78ad1a65f73a4a
+"acorn-walk@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "acorn-walk@npm:8.0.0"
+  checksum: 3/667044d50cf730830c76c1d61ab6b8a85c0dac2309534761e66ca07e779da0c67e62ac5b4bb737ab0bf63c3cef00710486de76860b4b1aeb9a7d68e7327d6900
   languageName: node
   linkType: hard
 
-"acorn@npm:^7.3.1":
+"acorn@npm:^7.4.0":
   version: 7.4.0
   resolution: "acorn@npm:7.4.0"
   bin:
     acorn: bin/acorn
   checksum: 3/a25b12d9e803df49593e983f05abd8084be883df23f78a3ceb49bfb9c453fdc43d51b3ce268b6acd7694c34d9cde1707acb1cdcbc5303bde47bee43ffc131491
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "acorn@npm:8.0.1"
+  bin:
+    acorn: bin/acorn
+  checksum: 3/11fa4a057db938d2b2a6fd20e8baeb853624439bceac47030ea2fdebe4700b14eadf2f4de146fcbe04b0245ce2c718c5226239092e6bcf5eed0f77edf4b5149a
   languageName: node
   linkType: hard
 
@@ -934,19 +943,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ava@npm:^3.11.1":
-  version: 3.11.1
-  resolution: "ava@npm:3.11.1"
+"ava@npm:^3.12.1":
+  version: 3.12.1
+  resolution: "ava@npm:3.12.1"
   dependencies:
     "@concordance/react": ^2.0.0
-    acorn: ^7.3.1
-    acorn-walk: ^7.2.0
+    acorn: ^8.0.1
+    acorn-walk: ^8.0.0
     ansi-styles: ^4.2.1
     arrgv: ^1.0.2
     arrify: ^2.0.1
     callsites: ^3.1.0
     chalk: ^4.1.0
-    chokidar: ^3.4.1
+    chokidar: ^3.4.2
     chunkd: ^2.0.1
     ci-info: ^2.0.0
     ci-parallel-vars: ^1.0.1
@@ -955,7 +964,7 @@ __metadata:
     cli-truncate: ^2.1.0
     code-excerpt: ^3.0.0
     common-path-prefix: ^3.0.0
-    concordance: ^5.0.0
+    concordance: ^5.0.1
     convert-source-map: ^1.7.0
     currently-unhandled: ^0.4.1
     debug: ^4.1.1
@@ -970,12 +979,12 @@ __metadata:
     is-error: ^2.2.2
     is-plain-object: ^4.1.1
     is-promise: ^4.0.0
-    lodash: ^4.17.19
+    lodash: ^4.17.20
     matcher: ^3.0.0
     md5-hex: ^3.0.1
     mem: ^6.1.0
     ms: ^2.1.2
-    ora: ^4.0.5
+    ora: ^5.0.0
     p-map: ^4.0.0
     picomatch: ^2.2.2
     pkg-conf: ^3.1.0
@@ -990,12 +999,12 @@ __metadata:
     supertap: ^1.0.0
     temp-dir: ^2.0.0
     trim-off-newlines: ^1.0.1
-    update-notifier: ^4.1.0
+    update-notifier: ^4.1.1
     write-file-atomic: ^3.0.3
     yargs: ^15.4.1
   bin:
     ava: cli.js
-  checksum: 3/282cb94428db669d37d24a7d904ddf2270a63386d761392751ddfb096cab3002df821f12eac395ee424a0df52dc1e412477ff28ddac17859b870e95dcadc7a67
+  checksum: 3/08a7bf450913382f189601f19701798bc0393f7f74ad935c0afdd19488566480da379ef729406f1c1a6d9b4d3007105d59b8ad48fec1ed38f3a0e43790fa143d
   languageName: node
   linkType: hard
 
@@ -1257,7 +1266,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^2.0.0, chalk@npm:^2.4.1, chalk@npm:^2.4.2":
+"chalk@npm:^2.0.0, chalk@npm:^2.4.1":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
   dependencies:
@@ -1316,7 +1325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.4.1":
+"chokidar@npm:^3.4.2":
   version: 3.4.2
   resolution: "chokidar@npm:3.4.2"
   dependencies:
@@ -1400,14 +1409,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-spinners@npm:^2.2.0":
+"cli-spinners@npm:^2.4.0":
   version: 2.4.0
   resolution: "cli-spinners@npm:2.4.0"
   checksum: 3/c32291dbcc98363ab22486084354a46e6fd7b9471d0b1c89a5cba1a62a96233f6519cca0ab21a16884f78fe034a7038597eb61e56f3fe11a592c6c2495925600
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:2.1.0, cli-truncate@npm:^2.1.0":
+"cli-truncate@npm:^2.1.0":
   version: 2.1.0
   resolution: "cli-truncate@npm:2.1.0"
   dependencies:
@@ -1515,10 +1524,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "commander@npm:5.1.0"
-  checksum: 3/d16141ea7f580945156fb8a06de2834c4647c7d9d3732ebd4534ab8e0b7c64747db301e18f2b840f28ea8fef51f7a8d6178e674b45a21931f0b65ff1c7f476b3
+"commander@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "commander@npm:6.0.0"
+  checksum: 3/c7dad02c772d6c6eb76f0642756408df98c730a17c764f5329700638045abd9633038251277ce7d6a077a96d89e6261ee268a4249a3bc4edd607ca8a0126642f
   languageName: node
   linkType: hard
 
@@ -1543,7 +1552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concordance@npm:^5.0.0":
+"concordance@npm:^5.0.1":
   version: 5.0.1
   resolution: "concordance@npm:5.0.1"
   dependencies:
@@ -1620,6 +1629,19 @@ __metadata:
     path-type: ^4.0.0
     yaml: ^1.7.2
   checksum: 3/bbd6bbaefe15938107da21f2b5f2d5ede75c7ed4bca5af904d91987c59b050ac95f5e786d9021e16959e0119b36174b190f6040a1daf6fddc75361ab123c0d45
+  languageName: node
+  linkType: hard
+
+"cosmiconfig@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "cosmiconfig@npm:7.0.0"
+  dependencies:
+    "@types/parse-json": ^4.0.0
+    import-fresh: ^3.2.1
+    parse-json: ^5.0.0
+    path-type: ^4.0.0
+    yaml: ^1.10.0
+  checksum: 3/151fcb91773c0ae826fc801eab86f8f818605dbf63c8e5515adf0ff0fec5ede8e614f387f93c088d65527a2ea9021f0cd8c6b6e5c7fef2b77480b5e2c33700dc
   languageName: node
   linkType: hard
 
@@ -1909,7 +1931,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enquirer@npm:^2.3.5":
+"enquirer@npm:^2.3.5, enquirer@npm:^2.3.6":
   version: 2.3.6
   resolution: "enquirer@npm:2.3.6"
   dependencies:
@@ -2107,13 +2129,13 @@ __metadata:
   linkType: hard
 
 "espree@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "espree@npm:7.2.0"
+  version: 7.3.0
+  resolution: "espree@npm:7.3.0"
   dependencies:
-    acorn: ^7.3.1
+    acorn: ^7.4.0
     acorn-jsx: ^5.2.0
     eslint-visitor-keys: ^1.3.0
-  checksum: 3/51bdb836f47a360ea4fd1a28cf7df1974f2be93abd5cf707cfbedcb15fb6591d26f6dc345d3cb07c4b1df7c5435e50d4b2fdf2a0ed4d63175da8b2c83f06057b
+  checksum: 3/dd2543c293e091532f3d6eda4a09ae49039ac65e69bc072aec952a5db6eb23eeee7617e99cde11414367104208c2dec13f709bbede0528d4f6854ce5cb734960
   languageName: node
   linkType: hard
 
@@ -2173,7 +2195,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^4.0.1":
+"execa@npm:^4.0.3":
   version: 4.0.3
   resolution: "execa@npm:4.0.3"
   dependencies:
@@ -2986,7 +3008,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0":
+"import-fresh@npm:^3.0.0, import-fresh@npm:^3.1.0, import-fresh@npm:^3.2.1":
   version: 3.2.1
   resolution: "import-fresh@npm:3.2.1"
   dependencies:
@@ -3465,6 +3487,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"json-parse-even-better-errors@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "json-parse-even-better-errors@npm:2.3.0"
+  checksum: 3/2eae829978b12c0967d0e5869688ef259721d882026bb5faaee0043dcb556bde738692b48dfbff926bd66348c9c18bcf3c2a647c55fbc7ec03945f985b2f6bda
+  languageName: node
+  linkType: hard
+
 "json-schema-traverse@npm:^0.4.1":
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
@@ -3561,18 +3590,18 @@ fsevents@~2.1.2:
   linkType: hard
 
 "lint-staged@npm:^10.2.11":
-  version: 10.2.11
-  resolution: "lint-staged@npm:10.2.11"
+  version: 10.2.13
+  resolution: "lint-staged@npm:10.2.13"
   dependencies:
-    chalk: ^4.0.0
-    cli-truncate: 2.1.0
-    commander: ^5.1.0
-    cosmiconfig: ^6.0.0
+    chalk: ^4.1.0
+    cli-truncate: ^2.1.0
+    commander: ^6.0.0
+    cosmiconfig: ^7.0.0
     debug: ^4.1.1
     dedent: ^0.7.0
-    enquirer: ^2.3.5
-    execa: ^4.0.1
-    listr2: ^2.1.0
+    enquirer: ^2.3.6
+    execa: ^4.0.3
+    listr2: ^2.6.0
     log-symbols: ^4.0.0
     micromatch: ^4.0.2
     normalize-path: ^3.0.0
@@ -3581,11 +3610,11 @@ fsevents@~2.1.2:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 3/0d1c408dfea1173b6a691b223228db5a617365bd3ee6b7151fc3cd0b69ecbc1a48ced6675163baa67851c1492ab9025490932d9bf0597dc496638c5a1b4b68ab
+  checksum: 3/ee8fec4a11f1f88991f4071096624daf428a676284a8cf4a3a2d72a1106ff67668115c31ed34a600de13af8f85af279fad73b01960dba7ea3a1c6a4857a6dbb9
   languageName: node
   linkType: hard
 
-"listr2@npm:^2.1.0":
+"listr2@npm:^2.6.0":
   version: 2.6.0
   resolution: "listr2@npm:2.6.0"
   dependencies:
@@ -3654,19 +3683,10 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19":
+"lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
   version: 4.17.20
   resolution: "lodash@npm:4.17.20"
   checksum: 3/c62101d2500c383b5f174a7e9e6fe8098149ddd6e9ccfa85f36d4789446195f5c4afd3cfba433026bcaf3da271256566b04a2bf2618e5a39f6e67f8c12030cb6
-  languageName: node
-  linkType: hard
-
-"log-symbols@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "log-symbols@npm:3.0.0"
-  dependencies:
-    chalk: ^2.4.2
-  checksum: 3/bfa7cceaea16d7e378b4f6a16e22c5c78bc4250350a84d653766927bdf27e5b94015f616e193bc275e80d13f882867ddf224a3c6c152e24289ed5e58d84d306e
   languageName: node
   linkType: hard
 
@@ -4227,19 +4247,19 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"ora@npm:^4.0.5":
-  version: 4.1.1
-  resolution: "ora@npm:4.1.1"
+"ora@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "ora@npm:5.0.0"
   dependencies:
-    chalk: ^3.0.0
+    chalk: ^4.1.0
     cli-cursor: ^3.1.0
-    cli-spinners: ^2.2.0
+    cli-spinners: ^2.4.0
     is-interactive: ^1.0.0
-    log-symbols: ^3.0.0
+    log-symbols: ^4.0.0
     mute-stream: 0.0.8
     strip-ansi: ^6.0.0
     wcwidth: ^1.0.1
-  checksum: 3/21db2c0af36b9c4cb423dbdaeed726d84c4db4faec8c69eca80f2ee60465c5520a0de54618c53226925a787181ec61b5760522b0240a6998de4a5a9c5cf129ed
+  checksum: 3/ba2c5f92aada785463e47e1351eb2b49380fb1cd8e02bee22b353ca6dc15f47dd5b672fe11dd57262b30de93ca5b6b012c574bdc6f40a35b34f73ebdc8b216ba
   languageName: node
   linkType: hard
 
@@ -4386,14 +4406,14 @@ fsevents@~2.1.2:
   linkType: hard
 
 "parse-json@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "parse-json@npm:5.0.1"
+  version: 5.1.0
+  resolution: "parse-json@npm:5.1.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
     error-ex: ^1.3.1
-    json-parse-better-errors: ^1.0.1
+    json-parse-even-better-errors: ^2.3.0
     lines-and-columns: ^1.1.6
-  checksum: 3/051a5ebaed679acc1cea7248b96bdab4eaa02bf7c1043ab79cfc2099dd64a137a2b5320b1111e40562bf2912832dd2b58220c36a4c6557906de8bce43a491196
+  checksum: 3/5e09955194d4ced3a7c8d2e41302834c1420e3709e06b16fa0d4bff575f054f7323cb4d4551fb6680d4c487184883ba20229de19edd5a52e1c5920148778d8cc
   languageName: node
   linkType: hard
 
@@ -4565,11 +4585,11 @@ fsevents@~2.1.2:
   linkType: hard
 
 "prettier@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "prettier@npm:2.0.5"
+  version: 2.1.0
+  resolution: "prettier@npm:2.1.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 3/d249d89361870a29b20e8b268cb09e908490b8c9e21f70393d12a213701f29ba7e95b7f9ce0ad63929c16ce475176742481911737ae3da4a498873e4a3b90990
+  checksum: 3/f955d380d2892284c28bbfe32b1601cfcd7a24d8b310832937773b9e733f624e38ff70cbafee80e9553bdb3c55783d019163667bf9a69df4e6f7c2acdcf54c06
   languageName: node
   linkType: hard
 
@@ -4863,7 +4883,7 @@ fsevents@~2.1.2:
     "@mdx-js/mdx": ^1.6.16
     "@rollup/plugin-virtual": ^2.0.3
     apr-intercept: ^3.0.4
-    ava: ^3.11.1
+    ava: ^3.12.1
     c8: ^7.3.0
     eslint: ^7.7.0
     eslint-config-prettier: ^6.11.0
@@ -6076,7 +6096,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"update-notifier@npm:^4.1.0":
+"update-notifier@npm:^4.1.1":
   version: 4.1.1
   resolution: "update-notifier@npm:4.1.1"
   dependencies:
@@ -6366,7 +6386,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"yaml@npm:^1.7.2":
+"yaml@npm:^1.10.0, yaml@npm:^1.7.2":
   version: 1.10.0
   resolution: "yaml@npm:1.10.0"
   checksum: 3/d4cc9f9724f8d0aebc2cf52e4e6aa7059f12d50deb54b5225d103462fb2af36e5c0bb419101ca4b1f0cd3b4db9e4139cf2c690e863ac6227648d39d6f4e2522c

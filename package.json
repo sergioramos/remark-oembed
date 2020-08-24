@@ -36,7 +36,7 @@
     "@babel/preset-react": "^7.10.4",
     "@mdx-js/mdx": "^1.6.16",
     "@rollup/plugin-virtual": "^2.0.3",
-    "ava": "^3.11.1",
+    "ava": "^3.12.1",
     "c8": "^7.3.0",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",

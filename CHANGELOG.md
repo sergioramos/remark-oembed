@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/sergioramos/remark-oembed/compare/v1.1.3...v1.1.4) (2020-08-25)
+
+### Chores
+
+- **deps-dev:** bump ava from 3.11.1 to 3.12.1 ([6e63441](https://github.com/sergioramos/remark-oembed/commit/6e6344124587f25f4705a3ffc6b89ebe223df8db))
+- **deps-dev:** bump prettier from 2.0.5 to 2.1.0 ([7a16df9](https://github.com/sergioramos/remark-oembed/commit/7a16df96090cd85142e3f3dedb38cb01e649b70c))
+
 ## [1.1.3](https://github.com/sergioramos/remark-oembed/compare/v1.1.2...v1.1.3) (2020-08-22)
 
 ### Chores

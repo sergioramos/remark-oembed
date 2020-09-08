@@ -1,3 +1,14 @@
+## [1.1.5](https://github.com/sergioramos/remark-oembed/compare/v1.1.4...v1.1.5) (2020-09-08)
+
+### Chores
+
+- upgrade dependencies ([427df88](https://github.com/sergioramos/remark-oembed/commit/427df88b3373bfdc798d2499ffe3ec71861ea206))
+- **deps-dev:** bump prettier from 2.1.0 to 2.1.1 ([cce93ab](https://github.com/sergioramos/remark-oembed/commit/cce93abcabb6ff79974ce77d4e67dfea57648964))
+
+### Continuous Integration
+
+- setup working dependabot ([f6b1991](https://github.com/sergioramos/remark-oembed/commit/f6b199179f2caf51cf775f2e9e8963fd90425a58))
+
 ## [1.1.4](https://github.com/sergioramos/remark-oembed/compare/v1.1.3...v1.1.4) (2020-08-25)
 
 ### Chores

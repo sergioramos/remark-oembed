@@ -10,11 +10,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.1.1
       with:
         node-version: '13.x'
     - name: Setup Cache
-      uses: actions/cache@v1
+      uses: actions/cache@v2.1.1
       with:
         path: .yarn
         key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
@@ -35,7 +35,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: Commit Lint
-      uses: wagoid/commitlint-github-action@v1
+      uses: wagoid/commitlint-github-action@v2.0.2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -49,11 +49,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.1.1
       with:
         node-version: '13.x'
     - name: Setup Cache
-      uses: actions/cache@v1
+      uses: actions/cache@v2.1.1
       with:
         path: .yarn
         key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
@@ -72,11 +72,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.1.1
       with:
         node-version: '13.x'
     - name: Setup Cache
-      uses: actions/cache@v1
+      uses: actions/cache@v2.1.1
       with:
         path: .yarn
         key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
@@ -101,7 +101,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Get branch
-      uses: rlespinasse/github-slug-action@1.1.0
+      uses: rlespinasse/github-slug-action@2.1.0
     - name: Release
       uses: ridedott/release-me-action@master
       if: ${{ env.GITHUB_REF_SLUG == 'master' }}

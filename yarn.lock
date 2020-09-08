@@ -37,7 +37,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.4":
+"@babel/core@npm:^7.11.6":
   version: 7.11.6
   resolution: "@babel/core@npm:7.11.6"
   dependencies:
@@ -2087,7 +2087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.7.0":
+"eslint@npm:^7.8.1":
   version: 7.8.1
   resolution: "eslint@npm:7.8.1"
   dependencies:
@@ -2624,7 +2624,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"got@npm:^11.5.2":
+"got@npm:^11.6.0":
   version: 11.6.0
   resolution: "got@npm:11.6.0"
   dependencies:
@@ -2965,7 +2965,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"husky@npm:^4.2.5":
+"husky@npm:^4.3.0":
   version: 4.3.0
   resolution: "husky@npm:4.3.0"
   dependencies:
@@ -3595,7 +3595,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.2.11":
+"lint-staged@npm:^10.3.0":
   version: 10.3.0
   resolution: "lint-staged@npm:10.3.0"
   dependencies:
@@ -4606,7 +4606,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.1.0":
+"prettier@npm:^2.1.1":
   version: 2.1.1
   resolution: "prettier@npm:2.1.1"
   bin:
@@ -4900,32 +4900,32 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "remark-oembed@workspace:."
   dependencies:
-    "@babel/core": ^7.11.4
+    "@babel/core": ^7.11.6
     "@babel/preset-react": ^7.10.4
     "@mdx-js/mdx": ^1.6.16
     "@rollup/plugin-virtual": ^2.0.3
     apr-intercept: ^3.0.4
     ava: ^3.12.1
     c8: ^7.3.0
-    eslint: ^7.7.0
+    eslint: ^7.8.1
     eslint-config-prettier: ^6.11.0
     eslint-config-xo-space: ^0.25.0
-    got: ^11.5.2
+    got: ^11.6.0
     hast-util-select: ^4.0.0
     hast-util-to-html: ^7.1.1
     hastscript: ^6.0.0
-    husky: ^4.2.5
-    lint-staged: ^10.2.11
+    husky: ^4.3.0
+    lint-staged: ^10.3.0
     mime: ^2.4.6
     mz: ^2.7.0
     npm-run-all: ^4.1.5
-    prettier: ^2.1.0
+    prettier: ^2.1.1
     puppeteer: ^5.2.1
     react: ^16.13.1
     react-dom: ^16.13.1
     remark: ^12.0.1
     remark-html: ^12.0.0
-    rollup: ^2.26.5
+    rollup: ^2.26.11
     rollup-plugin-babel: ^4.4.0
   languageName: unknown
   linkType: soft
@@ -5190,7 +5190,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.26.5":
+"rollup@npm:^2.26.11":
   version: 2.26.11
   resolution: "rollup@npm:2.26.11"
   dependencies:

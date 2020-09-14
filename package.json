@@ -38,7 +38,7 @@
     "@rollup/plugin-virtual": "^2.0.3",
     "ava": "^3.12.1",
     "c8": "^7.3.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-xo-space": "^0.25.0",
     "husky": "^4.3.0",

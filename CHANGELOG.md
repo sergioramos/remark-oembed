@@ -1,3 +1,14 @@
+## [1.1.6](https://github.com/sergioramos/remark-oembed/compare/v1.1.5...v1.1.6) (2020-09-14)
+
+### Chores
+
+- config to pkg.json ([032acdd](https://github.com/sergioramos/remark-oembed/commit/032acddb7aadb913d35c946dcbaf9b526d9d5c1f))
+- **deps-dev:** bump eslint from 7.8.1 to 7.9.0 ([4cd341e](https://github.com/sergioramos/remark-oembed/commit/4cd341e0015e8260e978888f1fe7a0829edce09c))
+
+### Tests
+
+- upgrade snapshots ([40bc5f9](https://github.com/sergioramos/remark-oembed/commit/40bc5f9f91e25cb97661405a1dfde99fdafd31c6))
+
 ## [1.1.5](https://github.com/sergioramos/remark-oembed/compare/v1.1.4...v1.1.5) (2020-09-08)
 
 ### Chores

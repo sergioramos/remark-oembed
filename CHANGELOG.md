@@ -1,3 +1,9 @@
+## [1.1.7](https://github.com/sergioramos/remark-oembed/compare/v1.1.6...v1.1.7) (2020-09-24)
+
+### Chores
+
+- upgrade dependencies ([8ccd493](https://github.com/sergioramos/remark-oembed/commit/8ccd493d4fad1b1939af30134e7178e78bc7b3a9))
+
 ## [1.1.6](https://github.com/sergioramos/remark-oembed/compare/v1.1.5...v1.1.6) (2020-09-14)
 
 ### Chores

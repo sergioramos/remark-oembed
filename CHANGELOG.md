@@ -1,3 +1,19 @@
+## [1.1.8](https://github.com/sergioramos/remark-oembed/compare/v1.1.7...v1.1.8) (2020-10-08)
+
+### Chores
+
+- upgrade dependencies ([ea66ae9](https://github.com/sergioramos/remark-oembed/commit/ea66ae9eb030e8e02428251d41b1d2a37e64c2f3))
+- **deps:** bump actions/setup-node from v2.1.1 to v2.1.2 ([79f3a90](https://github.com/sergioramos/remark-oembed/commit/79f3a90eef5a8e85e3fa794adbf5cea6519a62ec))
+- **deps:** bump devmasx/coverage-check-action from v1.1.0 to v1.2.0 ([28a4142](https://github.com/sergioramos/remark-oembed/commit/28a4142d63d92e7fbff0799b5010b36a6b08cc0f))
+- **deps:** bump rlespinasse/github-slug-action from 2.1.0 to 2.1.1 ([7cd1408](https://github.com/sergioramos/remark-oembed/commit/7cd14088c190a1e9cb3486f37eb816949ed1ab3c))
+- **deps-dev:** bump ava from 3.12.1 to 3.13.0 ([4962a73](https://github.com/sergioramos/remark-oembed/commit/4962a736554b92cb7cde1a9160f5dc86041f06b7))
+- **deps-dev:** bump remark-html from 12.0.0 to 13.0.1 ([31f432f](https://github.com/sergioramos/remark-oembed/commit/31f432f441fa0464f70c92a846f4dd7fda5be9d8))
+- **deps-dev:** bump rollup from 2.28.1 to 2.29.0 ([0c7e2ed](https://github.com/sergioramos/remark-oembed/commit/0c7e2eda011aad474734e7958c09652420bedacf))
+
+### Continuous Integration
+
+- don't release on upgrades to dev deps ([a341eca](https://github.com/sergioramos/remark-oembed/commit/a341ecab700388baad48f616580d7fd2c140cd05))
+
 ## [1.1.7](https://github.com/sergioramos/remark-oembed/compare/v1.1.6...v1.1.7) (2020-09-24)
 
 ### Chores

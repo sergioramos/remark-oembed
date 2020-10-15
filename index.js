@@ -4,6 +4,7 @@ const Intercept = require('apr-intercept');
 const { getType } = require('mime');
 const toHtml = require('hast-util-to-html');
 const { format, parse } = require('url');
+const IsUrl = require('is-url');
 
 const OEMBED_PROVIDERS_URL = 'https://oembed.com/providers.json';
 const EMPTY_CANVAS =
@@ -320,14 +321,23 @@ module.exports = (opts = {}) => {
         return node;
       }
 
-      const onlyChild = node.children.length === 1;
-      const hasLinkChild = node.children.every(({ type }) => type === 'link');
+      const children = node.children.map((node) => {
+        if (node.type === 'link') {
+          return node;
+        }
 
+        return IsUrl(node.value)
+          ? Object.assign(node, { url: node.value })
+          : node;
+      });
+
+      const onlyChild = node.children.length === 1;
+      const hasLinkChild = children.every(({ url }) => url);
       if (!onlyChild || !hasLinkChild) {
         return node;
       }
 
-      return processNode(node, ctx);
+      return processNode(Object.assign(node, { children }), ctx);
     });
 
     let count = 0;

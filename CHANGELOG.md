@@ -1,3 +1,19 @@
+# [1.2.0](https://github.com/sergioramos/remark-oembed/compare/v1.1.8...v1.2.0) (2020-10-16)
+
+### Chores
+
+- **deps:** bump remark from 12.0.1 to 13.0.0 ([2751e64](https://github.com/sergioramos/remark-oembed/commit/2751e64c772f04dddd2c674c8210cd3639061ba5))
+- **deps-dev:** bump actions/cache from v2.1.1 to v2.1.2 ([57fd33b](https://github.com/sergioramos/remark-oembed/commit/57fd33becf43970ba717170439425ff4f7a5892c))
+- **deps-dev:** bump c8 from 7.3.2 to 7.3.4 ([e58cef0](https://github.com/sergioramos/remark-oembed/commit/e58cef0ac5efdf4e8b6fe6d048e7e7635733647b))
+- **deps-dev:** bump eslint from 7.10.0 to 7.11.0 ([39a3cab](https://github.com/sergioramos/remark-oembed/commit/39a3cab6a1a3281ca36c8647195ca49652a773a1))
+- **deps-dev:** bump react-dom from 16.13.1 to 16.14.0 ([0bd6df5](https://github.com/sergioramos/remark-oembed/commit/0bd6df5bc14aff203c8d0efb4337a9321fa913d1))
+- **deps-dev:** bump rollup from 2.29.0 to 2.31.0 ([58a3dcb](https://github.com/sergioramos/remark-oembed/commit/58a3dcb719ccd3a6fe326c95f55f460cb17a4418))
+- **deps-dev:** upgrade dependencies ([8d64890](https://github.com/sergioramos/remark-oembed/commit/8d648907cc120b163816072812a0e5f3bc39aa87))
+
+### Features
+
+- add provider info to the inline classname ([ef01dc3](https://github.com/sergioramos/remark-oembed/commit/ef01dc3fba28d448da96fb7e144e4072ebd31f92)), closes [#129](https://github.com/sergioramos/remark-oembed/issues/129)
+
 ## [1.1.8](https://github.com/sergioramos/remark-oembed/compare/v1.1.7...v1.1.8) (2020-10-08)
 
 ### Chores

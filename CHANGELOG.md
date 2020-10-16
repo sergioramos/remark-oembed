@@ -1,3 +1,13 @@
+## [1.2.1](https://github.com/sergioramos/remark-oembed/compare/v1.2.0...v1.2.1) (2020-10-16)
+
+### Chores
+
+- **deps-dev:** bump ridedott/release-me-action to v3.2.3 ([daba7ca](https://github.com/sergioramos/remark-oembed/commit/daba7ca9ca8b5bf8f6ecc7da9826ae7e6a974912))
+
+### Continuous Integration
+
+- don't release on deps-dev scope ([14a262c](https://github.com/sergioramos/remark-oembed/commit/14a262c3c9a4c5e13bb05f5f870e40b14c3fdae9))
+
 # [1.2.0](https://github.com/sergioramos/remark-oembed/compare/v1.1.8...v1.2.0) (2020-10-16)
 
 ### Chores

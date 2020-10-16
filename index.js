@@ -2,6 +2,7 @@ const Got = require('got');
 const h = require('hastscript');
 const Intercept = require('apr-intercept');
 const { getType } = require('mime');
+const { paramCase: ParamCase } = require('param-case');
 const toHtml = require('hast-util-to-html');
 const { format, parse } = require('url');
 const IsUrl = require('is-url');
@@ -14,10 +15,10 @@ const ATTRS = {
   template: {
     'data-oembed-template': true,
   },
-  inline: {
-    class: 'remark-oembed-inline',
+  inline: (provider = '') => ({
+    class: `remark-oembed-inline remark-oembed-${ParamCase(provider)}`,
     'data-oembed': true,
-  },
+  }),
   image: {
     class: 'remark-oembed-photo',
     'data-oembed': true,
@@ -135,7 +136,7 @@ const resolvePreview = ({ isImage, thumbnail, url, emptyUrl }) => {
   return '';
 };
 
-const Oembed = ({ type, source, jsx = false, ...rest }) => {
+const Oembed = ({ type, source, jsx = false, provider_name, ...rest }) => {
   if (type === 'photo' && !source) {
     return StaticPhotoOembed({ jsx, ...rest });
   }
@@ -146,7 +147,7 @@ const Oembed = ({ type, source, jsx = false, ...rest }) => {
 
   const node = h(
     'div',
-    ATTRS.inline,
+    ATTRS.inline(provider_name),
     [anchor, h('template', ATTRS.template, [source])].filter(Boolean),
   );
 
@@ -194,7 +195,8 @@ const processOembed = async (oembed) => {
   }
 
   if (syncWidget && source) {
-    const newNode = h('div', ATTRS.inline, [source]);
+    const { provider_name } = oembed;
+    const newNode = h('div', ATTRS.inline(provider_name), [source]);
     if (!jsx) {
       return newNode;
     }

@@ -1858,6 +1858,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dot-case@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "dot-case@npm:3.0.3"
+  dependencies:
+    no-case: ^3.0.3
+    tslib: ^1.10.0
+  checksum: 3/31e5037039fb696ed7f1da1d3f0cea5fa0ffe0523334229a2f241856411fbbb59a5a7a6f8ae1447820718797708650bd6f90836d510ec27a81694fbc006c946a
+  languageName: node
+  linkType: hard
+
 "dot-prop@npm:^5.2.0":
   version: 5.3.0
   resolution: "dot-prop@npm:5.3.0"
@@ -3757,6 +3767,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"lower-case@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "lower-case@npm:2.0.1"
+  dependencies:
+    tslib: ^1.10.0
+  checksum: 3/52a55327ea69cbec7693daa11efb94f9e3d13b2697773d3cecd71f68c7eafaca2b0b34f8cc10617a751134e17c8396be992972765f5d5db220047651046762b5
+  languageName: node
+  linkType: hard
+
 "lowercase-keys@npm:^1.0.0, lowercase-keys@npm:^1.0.1":
   version: 1.0.1
   resolution: "lowercase-keys@npm:1.0.1"
@@ -4119,6 +4138,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"no-case@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "no-case@npm:3.0.3"
+  dependencies:
+    lower-case: ^2.0.1
+    tslib: ^1.10.0
+  checksum: 3/619e0bd00a3ef0fa6ad9442d32c88adcf47339c5b0d9bdfaaab19380709dad5ba71f865ae584531988ba85a6083e1f0ea0b851bcc49c67aee40a5100104e84b9
+  languageName: node
+  linkType: hard
+
 "node-gyp@npm:latest":
   version: 7.1.1
   resolution: "node-gyp@npm:7.1.1"
@@ -4454,6 +4483,16 @@ fsevents@~2.1.2:
     registry-url: ^5.0.0
     semver: ^6.2.0
   checksum: 3/3023e318de5d76bbd650aedd3671b452cb1e018c4d99b72955dde0f22c6ba765c3f6d678ab0ee45e2561842e8399b1fea77a0730dc93c39505e7ebfed7ab2818
+  languageName: node
+  linkType: hard
+
+"param-case@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "param-case@npm:3.0.3"
+  dependencies:
+    dot-case: ^3.0.3
+    tslib: ^1.10.0
+  checksum: 3/ef57facfaf282f6c074e565e26738e7bb043882aea9a4a575b0568d74f003ab8a1c69555d81773d25413287f079a367aa26a9518b3d5b25f2f17b4952a647f40
   languageName: node
   linkType: hard
 
@@ -4981,6 +5020,7 @@ fsevents@~2.1.2:
     mime: ^2.4.6
     mz: ^2.7.0
     npm-run-all: ^4.1.5
+    param-case: ^3.0.3
     prettier: ^2.1.2
     puppeteer: ^5.3.1
     react: ^16.14.0
@@ -5949,7 +5989,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.9.0":
+"tslib@npm:^1.10.0, tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: 3/f44fe7f216946b17d3e3074df3746372703cf24e9127b4c045511456e8e4bf25515fb0a1bb3937676cc305651c5d4fcb6377b0588a4c6a957e748c4c28905d17

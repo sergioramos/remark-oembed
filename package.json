@@ -30,7 +30,8 @@
     "hast-util-to-html": "^7.1.1",
     "hastscript": "^6.0.0",
     "is-url": "^1.2.4",
-    "mime": "^2.4.6"
+    "mime": "^2.4.6",
+    "param-case": "^3.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.1",

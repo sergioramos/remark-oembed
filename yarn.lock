@@ -4987,7 +4987,7 @@ fsevents@~2.1.2:
     react-dom: ^16.14.0
     remark: ^13.0.0
     remark-html: ^13.0.1
-    rollup: ^2.29.0
+    rollup: ^2.31.0
     rollup-plugin-babel: ^4.4.0
   languageName: unknown
   linkType: soft
@@ -5230,7 +5230,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.29.0":
+"rollup@npm:^2.31.0":
   version: 2.31.0
   resolution: "rollup@npm:2.31.0"
   dependencies:

@@ -1,3 +1,15 @@
+## [1.2.2](https://github.com/sergioramos/remark-oembed/compare/v1.2.1...v1.2.2) (2021-03-30)
+
+### Chores
+
+- upgrade dependencies ([7c2b942](https://github.com/sergioramos/remark-oembed/commit/7c2b942bccd83a2e6e50f6e31f0def9e48560bdf))
+- **deps:** bump actions/cache from v2.1.2 to v2.1.4 ([b80310c](https://github.com/sergioramos/remark-oembed/commit/b80310c1a19088a7868d429ffd87181bed7c583f))
+- **deps:** bump actions/setup-node from v2.1.2 to v2.1.5 ([71a0963](https://github.com/sergioramos/remark-oembed/commit/71a09638dcdf114e30edb484da0d0cd0e0a1c9a1))
+- **deps:** bump ridedott/release-me-action from v3.2.3 to v3.5.11 ([9c1add3](https://github.com/sergioramos/remark-oembed/commit/9c1add35c47463d221414f7659b69b014a7a2fb7))
+- **deps:** bump rlespinasse/github-slug-action from 2.1.1 to 3.4.0 ([04124c9](https://github.com/sergioramos/remark-oembed/commit/04124c97c80c46f75a1022441f7a211a32333fcd))
+- **deps:** bump wagoid/commitlint-github-action from v2.0.2 to v3.0.6 ([7d0b76d](https://github.com/sergioramos/remark-oembed/commit/7d0b76d98e933b7803a830408bbfd23c58685877))
+- **deps-dev:** upgrade yarn ([531d564](https://github.com/sergioramos/remark-oembed/commit/531d564db0dd17b3a2d2faa0ab9c6ea16b5a43cc))
+
 ## [1.2.1](https://github.com/sergioramos/remark-oembed/compare/v1.2.0...v1.2.1) (2020-10-16)
 
 ### Chores

@@ -20,6 +20,10 @@ const OUTPUTS = join(__dirname, 'outputs');
 const compileJsx = async (src, options) => {
   const config = await prettier.resolveConfig(__filename);
 
+  const prettify = (str) => {
+    return prettier.format(str, { ...config, parser: 'html' });
+  };
+
   const jsx = await mdx(src, {
     commonmark: true,
     gfm: true,
@@ -36,7 +40,9 @@ const compileJsx = async (src, options) => {
     treeshake: true,
     plugins: [
       virtual({
-        'main.js': "import React from 'react';\n".concat(code),
+        'main.js': "import React from 'react';\n"
+          .concat(`const mdx = React.createElement;\n`)
+          .concat(code),
       }),
       require('rollup-plugin-babel')({
         sourceType: 'module',
@@ -58,10 +64,7 @@ const compileJsx = async (src, options) => {
   const fn = new Function('React', `${result.output[0].code};\nreturn Main;`);
   const element = React.createElement(fn(React).default);
 
-  return prettier.format(ReactDOM.renderToStaticMarkup(element), {
-    ...config,
-    parser: 'html',
-  });
+  return prettify(ReactDOM.renderToStaticMarkup(element));
 };
 
 const compile = async (src, options) => {
